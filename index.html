@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Bunga Krisan - Tugas Tema 3 - 8E</title>
+  
+  <meta property="og:title" content="Tugas Tema 3: Bunga Krisan - Kelas 8E">
+  <meta property="og:description" content="Informasi lengkap Bunga Krisan oleh Kelompok 8E">
+  <meta name="theme-color" content="#9c27b0">
+  <link rel="icon" href="https://em-content.zobj.net/source/apple/354/cherry-blossom_1f338.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ungu: #9c27b0;
+      --ungu-tua: #7b1fa2;
+      --bg: #FFF5F8;
+      --card: #ffffff;
+      --text: #2c3e50;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --card: #1e1e1e;
+        --text: #e0e0e0;
+      }
+      body { background: var(--bg) !important; }
+      .info-box { background: #2a2a2a !important; }
+      h2 { background: #2a2a2a !important; }
+    }
+    html { scroll-behavior: smooth; }
+    body { 
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+      /* BACKGROUND UDAH PUTIH KE-PINK-AN */
+      background: #ffffff;
+      background-attachment: fixed;
+      margin: 0; 
+      padding: 15px; 
+      line-height: 1.7;
+      color: var(--text);
+    }
+    body::after {
+      content: "Ziffana Anggraeni - 8E";
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      opacity: 0.15;
+      font-size: 12px;
+      z-index: -1;
+    }
+    .wadah { 
+      background: var(--card); 
+      max-width: 700px; 
+      margin: auto; 
+      padding: 20px; 
+      border-radius: 15px; 
+      box-shadow: 0 4px 20px rgba(156, 39, 176, 0.1);
+      border-top: 5px solid var(--ungu);
+    }
+    .pembuat {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--ungu-tua);
+      margin-bottom: 5px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    h1 { 
+      color: var(--ungu); 
+      text-align: center; 
+      margin: 5px 0 20px 0; 
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    h2 { 
+      color: var(--ungu-tua); 
+      background: #fce4ec; 
+      padding: 8px 12px; 
+      border-radius: 6px; 
+      font-size: 1.1rem;
+      margin-top: 25px;
+      border-left: 4px solid var(--ungu);
+      font-weight: 600;
+    }
+    .daftar-isi {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px dashed var(--ungu);
+      margin-bottom: 20px;
+    }
+    .daftar-isi a {
+      display: block;
+      color: var(--ungu-tua);
+      text-decoration: none;
+      margin: 5px 0;
+      font-weight: 500;
+    }
+    .daftar-isi a:hover { text-decoration: underline; }
+    .gambar-utama {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+      border: 3px solid var(--ungu);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .info-box { 
+      background: #ffffff; 
+      padding: 12px; 
+      border-left: 4px solid var(--ungu); 
+      margin: 15px 0; 
+      border-radius: 4px; 
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .footer { 
+      text-align: center; 
+      margin-top: 30px; 
+      padding-top: 15px;
+      border-top: 2px dashed var(--ungu); 
+      color: var(--text); 
+      font-size: 14px; 
+    }
+    .anggota {
+      text-align: left;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    b { color: var(--ungu-tua); font-weight: 600; }
+    .back-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--ungu);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    @media print {
+      body { background: white !important; }
+      .back-top, body::after { display: none !important; }
+      .wadah { box-shadow: none; border: 1px solid #ccc; }
+      h2 { background: #ffffff !important; }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="wadah">
+    <div class="pembuat">by: Ziffana anggraeni</div>
+    <h1>🌸 BUNGA KRISAN</h1>
+    
+    <div class="daftar-isi">
+      <b>Daftar Isi:</b>
+      <a href="#nama">1. Nama Tanaman</a>
+      <a href="#jenis">2. Jenis Tanaman</a>
+      <a href="#manfaat">3. Manfaat</a>
+      <a href="#perawatan">4. Cara Perawatan</a>
+      <a href="#daerah">5. Daerah Penyebaran</a>
+      <a href="#biak">6. Cara Berkembang Biak</a>
+    </div>
+    
+    <img src="https://i.postimg.cc/mg0F4yvN/IMG-20260423-WA0059.jpg" 
+         alt="Bunga Krisan Ungu" 
+         class="gambar-utama"
+         loading="lazy">
+    <p style="text-align:center; font-size:0.8rem; color:#666; margin-top:-10px;">Dokumentasi Bunga Krisan / Seruni</p>
+    
+    <h2 id="nama">1. Nama Tanaman</h2>
+    <p><b>Nama Lokal:</b> Krisan, Seruni, Bunga Pompom<br>
+       <b>Nama Ilmiah:</b> <i>Chrysanthemum morifolium</i><br>
+       <b>Famili:</b> Asteraceae / Compositae</p>
+    
+    <h2 id="jenis">2. Jenis Tanaman</h2>
+    <p>Termasuk ke dalam <b>jenis tanaman hias</b>. Krisan merupakan tanaman semak tahunan yang banyak dibudidayakan sebagai tanaman hias pot maupun bunga potong untuk rangkaian buket.</p>
+    
+    <div class="info-box">
+      <h2 id="manfaat">3. Manfaat</h2>
+      <ul>
+        <li><b>Tanaman Hias:</b> Mempercantik ruangan & taman dengan berbagai warna bunga.</li>
+        <li><b>Pembersih Udara:</b> Dapat membantu membersihkan udara dalam ruangan dengan menyerap racun seperti formaldehida, benzena, dan amonia.</li>
+        <li><b>Bahan Teh Herbal:</b> Bunga krisan kering bisa diseduh jadi teh yang dipercaya baik untuk kesehatan mata & menurunkan panas.</li>
+        <li><b>Bahan Pestisida Nabati:</b> Mengandung piretrin alami yang bisa mengusir serangga.</li>
+      </ul>
+    </div>
+    
+    <h2 id="perawatan">4. Cara Perawatan</h2>
+    <ul>
+      <li><b>Cahaya:</b> Membutuhkan sinar matahari penuh, minimal 6-8 jam sehari untuk berbunga lebat.</li>
+      <li><b>Penyiraman:</b> Rutin setiap hari, jaga media tetap lembab tapi tidak becek.</li>
+      <li><b>Media Tanam:</b> Tanah gembur dengan drainase baik. Campuran tanah + sekam + kompos.</li>
+      <li><b>Pemangkasan:</b> Pangkas bunga yang sudah layu agar merangsang tumbuhnya bunga baru.</li>
+      <li><b>Pemupukan:</b> Beri pupuk NPK sebulan sekali dengan dosis rendah.</li>
+    </ul>
+    
+    <h2 id="daerah">5. Daerah Penyebaran</h2>
+    <p>Berasal dari Tiongkok dan Jepang. Saat ini tersebar luas di wilayah Asia, termasuk Indonesia, serta di Amerika Utara dan Eropa. Di Indonesia, sentra budidaya krisan ada di Cipanas, Bandungan, dan Tomohon.</p>
+    
+    <h2 id="biak">6. Cara Berkembang Biak</h2>
+    <p>Krisan dapat berkembang biak secara <b>vegetatif</b> melalui stek batang dan pemisahan anakan. Cara stek paling umum dilakukan dengan memotong batang muda sepanjang 10 cm lalu ditancapkan ke media tanam. Bisa juga secara <b>generatif</b> melalui biji, namun jarang dilakukan karena lebih lama.</p>
+    
+    <div class="footer">
+      <b>TUGAS TEMA 3 - PRAKARYA</b><br>
+      <b>KELAS 8E</b><br>
+      <div class="anggota">
+        1. Ziffana Anggraeni (Absen)<br>
+        2. Zidan Yoga Pratama (Absen)<br>
+        3. Maitsa Hanan P.T (Absen)<br>
+        4. Septian Fauzan Zamzami (Absen)<br>
+      </div>
+      <p style="margin-top:15px;"><i>Last update: 23 April 2026</i></p>
+    </div>
+  </div>
+  
+  <a href="#top" class="back-top">↑</a>
+</body>
+</html>
